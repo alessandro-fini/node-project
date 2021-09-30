@@ -10,8 +10,18 @@ function runApp() {
         }
     } */
 
-    const car = new Auto('Ford', 'Fiesta', 2020);
-    car.showCar();
+    const hatchback = new Auto('Ford', 'Fiesta', 2020);
+    const sedan = new Auto('Volkswagen', 'Passat', 2005);
+
+    const cars = [hatchback, sedan];
+
+    /* for (let i = 0; i < cars.length; i++) {
+        cars[i].showCar();
+    } */
+
+    cars.forEach(car => {
+        car.showCar();
+    });
 }
 
 runApp();
